@@ -1,4 +1,4 @@
-Name: winsample
+﻿Name: winsample
 Cartridge-Short-Name: WINSAMPLE
 # This is used when creating environment variables:
 # OPENSHIFT_WINSAMPLE_DIR
@@ -84,7 +84,7 @@ Endpoints:
     #generates OPENSHIFT_WINSAMPLE_IP
     Private-Port-Name: PORT
     #generates OPENSHIFT_WINSAMPLE_PORT
-    Private-Port:      80
+    Private-Port:      8080
     Public-Port-Name:  PROXY_PORT
     #generates OPENSHIFT_WINSAMPLE_PROXY_PORT
     Mappings:
