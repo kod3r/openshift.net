@@ -1,8 +1,8 @@
 
 <!-- saved from url=(0105)https://raw.githubusercontent.com/wshearn/openshift-community-cartridge-mono/master/metadata/manifest.yml -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">Name: mono
-Cartridge-Short-Name: DotNet
-Display-Name: ASP.NET Custom Cartridge
+Cartridge-Short-Name: MONO
+Display-Name: ASP.NET Cartridge using Mono
 Source-Url: https://github.com/wshearn/openshift-community-cartridge-mono.git
 Description: "ASP.NET for OpenShift."
 Version: '3.0.7'
