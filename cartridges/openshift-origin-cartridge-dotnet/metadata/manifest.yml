@@ -1,22 +1,13 @@
 Name: dotnet
 Cartridge-Short-Name: DOTNET
-# This is used when creating environment variables:
-# OPENSHIFT_DOTNET_DIR
-# OPENSHIFT_DOTNET_IP
-# OPENSHIFT_DOTNET_PORT
-# OPENSHIFT_DOTNET_PROXY_PORT
+
 Cartridge-Version: '0.0.1'
-# is a version number identifying a release of your cartridge to OpenShift.
 Compatible-Versions: ['0.0.1']
-#  is a list of past cartridge versions that are compatible with this version. To be compatible with a previous version, the code changes you made in this version do not require the cartridge to be restarted or the application developer’s application to be restarted.
 Cartridge-Vendor: redhat
-#  is used to differentiate cartridges when installed in the system. As an individual, you should use the same unique value for all your cartridges to identify yourself; otherwise, use your company name.
 Display-Name: DotNet 4.5
 Description: "Microsoft DotNet 4.5 Cartrige."
 Version: '4.5'
-# is the default or only version of the software packaged by this cartridge.
 Versions: ['4.5']
-#  is the list of the versions of the software packaged by this cartridge.
 License: "??"
 License-Url: "http://www.uhurusoftware.com"
 Vendor: "Uhuru Software"
@@ -29,7 +20,6 @@ Website: http://www.uhurusoftware.com/
 Help-Topics:
   "Developer Center": "http://www.uhurusoftware.com/community/developers"
 Cart-Data:
-#describes information on how the environment variables should be used
   - Key: OPENSHIFT_DOTNET_LOG_DIR
     Type: environment
     Description: "Directory to store application log files."
@@ -67,13 +57,11 @@ Subscribes:
   set-env:
     Type: "ENV:*"
     Required: false
-    #ENV:* pulls in environment variables from all add-on cartridges within an application
 Scaling:
   Min: 1
   Max: -1
   Required: true
 Endpoints:
-#Endpoints are where front-end httpd mappings for your cartridge are declared to route traffic from the outside world to your cartridge’s services.
   - Private-IP-Name:   IP
     Private-Port-Name: PORT
     Private-Port:      8080
